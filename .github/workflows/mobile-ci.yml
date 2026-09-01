@@ -3,7 +3,7 @@ on:
   push:
     branches: [main, master, develop]
     paths:
-      - 'mobile/*''
+      - 'mobile/**'
   pull_request:
     branches: [main, master, develop]
     paths:
@@ -19,8 +19,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@d5U
-
+        uses: actions/checkout@@v
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
